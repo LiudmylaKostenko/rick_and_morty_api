@@ -1,0 +1,56 @@
+.details {
+  width: 600px;
+  margin: 30px 0 0;
+  height: auto;
+  text-align: center;
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  span {
+    color: #65ab23;
+    font-size: 16px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .title-details {
+    color: YELLOW;
+    letter-spacing: 2px;
+    border: none;
+  }
+
+  .list-group {
+    .item-img {
+      list-style: none;
+      margin-top: 10px;
+      img {
+        margin-bottom: 50px;
+      }
+    }
+
+    .list-group-item {
+      position: relative;
+      width: 560px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #c5a5a5;
+      background: none;
+      color: aliceblue;
+    }
+  }
+}
+
+.loading-info {
+  color: chartreuse;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.episode-img {
+  width: 300px;
+  height: 230px;
+  margin-top: 35px;
+}
