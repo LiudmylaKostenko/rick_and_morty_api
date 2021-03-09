@@ -33,11 +33,16 @@ const HeaderComponent = ({ location }) => {
 	const allEpisodes = useSelector((state) => state.episodeReducer.allEpisodes);
 	// hook useSelector help used values from state in func component
 
-	const nameOfPage = location.pathname.toString().includes('characters')
-		? 'Characters'
-		: location.pathname.toString().includes('locations')
-		? 'Locations'
-		: 'Episodes';
+	let nameOfPage ='/'	;
+		if (location.pathname.toString().includes('characters')){
+			 nameOfPage = 'Characters'
+		}
+	if (location.pathname.toString().includes('locations')){
+		nameOfPage = 'Locations'
+	}
+	if (location.pathname.toString().includes('episodes')){
+		nameOfPage = 'Episodes'
+	}
 
 	const onClickHandler = async (e) => {
 		if (nameOfPage === 'Characters') {
@@ -46,12 +51,14 @@ const HeaderComponent = ({ location }) => {
 			setParamOfSearch(e.target.value); // value from input used in request API , example   // name=rick&status=alive
 			await dispatch(getCharactersBySearchParams(paramOfSearch));
 			dispatch(updatingCharactersByParamsSuccess); // after dispatching updating = update success
-		} else if (nameOfPage === 'Locations') {
+		}
+		if (nameOfPage === 'Locations') {
 			dispatch(updatingLocationsByParamsStart);
 			setParamOfSearch(e.target.value);
 			await dispatch(getLocationsBySearchParams(paramOfSearch));
 			dispatch(updatingLocationsByParamsSuccess);
-		} else if (nameOfPage === 'Episodes') {
+		}
+		if (nameOfPage === 'Episodes') {
 			dispatch(updatingEpisodesByParamsStart);
 			setParamOfSearch(e.target.value);
 			await dispatch(getEpisodesBySearchParams(paramOfSearch));
