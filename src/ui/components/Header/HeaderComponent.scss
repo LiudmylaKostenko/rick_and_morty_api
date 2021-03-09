@@ -1,0 +1,46 @@
+.header {
+  margin: 10px;
+  height: 50px;
+  width: 100%;
+
+  ul li {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    border-radius: 3px;
+    &:hover {
+      background-color: #4e5c5cf2;
+    }
+  }
+
+  p {
+    color: darkkhaki;
+    font-size: 16px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  h3 a {
+    color: white;
+    &:hover {
+      color: red;
+    }
+  }
+
+  input {
+    width: 260px;
+    margin: 20px;
+  }
+
+  .btn-search {
+    width: 70px;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  .search-describe {
+    margin: 10px;
+  }
+}
