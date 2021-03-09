@@ -1,4 +1,5 @@
 {
+  "homepage": "http://LiudmylaSavenko.github.io/rick_and_morty_api",
   "name": "rickandmortyapi",
   "version": "0.1.0",
   "private": true,
@@ -75,5 +76,8 @@
       "last 2 firefox version",
       "last 2 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

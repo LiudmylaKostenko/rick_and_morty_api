@@ -6,3 +6,7 @@ npm install
 npm start
 
 
+deploy---
+
+https://liudmylasavenko.github.io/rick_and_morty_api
+
